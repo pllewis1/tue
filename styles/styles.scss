@@ -108,14 +108,12 @@ div .colorwheel {
   width: 100px;
   height: 100px;
   position: relative;
-  bottom: 86px;
-  top: -145px;
+  top: 0;
   left: -23px;
-  border: #000;
   background-color: #fff;
 
 }
-.button_bar:nth-child(4n+1) {
+.button_bar button:last-child {
     border-right: 3px solid #5CA4D7;
 
 }
@@ -125,10 +123,10 @@ button.colorexpand{
   display: block;
   border-radius: 6px;
   top: -130px;
-  transition: 0.5s position;
+  transition: 0.5s bottom;
 
 }
  &:focus .colorwheel {
    outline: none;
  }
-   }
+}

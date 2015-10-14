@@ -89,10 +89,8 @@ div .colorwheel {
   width: 100px;
   height: 100px;
   position: relative;
-  bottom: 86px;
-  top: -145px;
+  top: 0;
   left: -23px;
-  border: #000;
   background-color: #fff; }
   div .colorwheel .color1, div .colorwheel .color2, div .colorwheel .color3, div .colorwheel .color4 {
     float: left;
@@ -100,14 +98,14 @@ div .colorwheel {
     height: 30%;
     margin: 10% 10%; }
 
-.button_bar:nth-child(4n+1) {
+.button_bar button:last-child {
   border-right: 3px solid #5CA4D7; }
 
 button.colorexpand:hover .colorwheel {
   display: block;
   border-radius: 6px;
   top: -130px;
-  transition: 0.5s position; }
+  transition: 0.5s bottom; }
 
 button.colorexpand:focus .colorwheel {
   outline: none; }
