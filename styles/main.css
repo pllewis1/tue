@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box; }
+
+section {
+  width: 30%;
+  padding: 2%;
+  padding-top: 4%;
+  float: left;
+  overflow: auto; }
+
+.window {
+  width: 100%;
+  border: 3px solid #63A8D8;
+  overflow: auto; }
+
+.tshirt {
+  display: block;
+  width: 100%;
+  float: left; }
+
+.color1 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  margin: 0 auto; }
+
+.color2 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  margin: 0 auto; }
+
+.color3 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  margin: 0 auto; }
+
+.color4 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+  margin: 0 auto; }
+
+button {
+  width: 20%;
+  height: 40px;
+  background: #fff;
+  border: 3px solid #5CA4D7;
+  border-top: 0px;
+  float: left;
+  font-size: 20px;
+  color: #63A8D8;
+  border-right: none; }
+
+.item_specs {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px; }
+
+h1,
+h2 {
+  display: block;
+  font-size: 25px;
+  color: #7FADD7;
+  margin-top: 5px; }
+
+h1 {
+  padding-left: 10px;
+  width: 65%;
+  float: left;
+  font-weight: lighter; }
+
+h2 {
+  float: right;
+  padding-right: 5px; }
+
+button:hover {
+  background: #7FADD7;
+  color: #fff; }
+
+div .colorwheel {
+  display: none;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: 86px;
+  top: -145px;
+  left: -23px;
+  border: #000;
+  background-color: #fff; }
+  div .colorwheel .color1, div .colorwheel .color2, div .colorwheel .color3, div .colorwheel .color4 {
+    float: left;
+    width: 30%;
+    height: 30%;
+    margin: 10% 10%; }
+
+.button_bar:nth-child(4n+1) {
+  border-right: 3px solid #5CA4D7; }
+
+button.colorexpand:hover .colorwheel {
+  display: block;
+  border-radius: 6px;
+  top: -130px;
+  transition: 0.5s position; }
+
+button.colorexpand:focus .colorwheel {
+  outline: none; }
